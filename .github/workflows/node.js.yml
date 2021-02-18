@@ -3,8 +3,9 @@
 name: Github dkd-auto-coin
 on:
     push:
-        branches:
-            - master
+        branches: main
+    gollum:
+    workflow_dispatch:
     schedule:
         - cron: '27 * * * *'
 jobs:
